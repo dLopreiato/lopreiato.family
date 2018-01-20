@@ -2,13 +2,19 @@
 title: Lopreiato.Family
 timezone: America/New_York
 collections:
+  posts:
+    title: Posts
+    output: true
   profiles:
     title: Profiles
     output: true
-    permalink: /:path/
+    permalink: "/:path/"
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  - scope:
-      path: ""
-      type: profiles
-    values:
-      layout: profile
+- scope:
+    path: ''
+    type: profiles
+  values:
+    layout: profile
