@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ page.fullname }}</title>
+  <meta name="description" content="{{ page.title }}">
+
+  {% include styles.html %}
+
+</head>
+<body>
+  {% include navbar.html %}
+  
+  <div class="section" id="profile">
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <img class="u-max-full-width" src="images/{{ page.portrait }}">
+        </div>
+        <div class="six columns">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>
