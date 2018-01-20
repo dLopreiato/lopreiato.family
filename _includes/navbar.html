@@ -1,14 +1,14 @@
 <nav class="navbar">
   <div class="container">
     <ul class="navbar-list">
-      <li class="navbar-item"><a class="navbar-link lopreiato" href="index.html">L</a></li>
-      <li class="navbar-item"><a class="navbar-ico lopreiato" href="index.html">L</a></li>
+      <li class="navbar-item"><a class="navbar-link lopreiato" href="{{ "" | relative_url }}">L</a></li>
+      <li class="navbar-item"><a class="navbar-ico lopreiato" href="{{ "" | relative_url }}">L</a></li>
     </ul>
     <ul class="navbar-list u-pull-right">
-      <li class="navbar-item"><a class="navbar-link" href="index.html#top">Home</a></li>
-      <li class="navbar-item"><a class="navbar-ico" href="index.html#top"><img src="images/ico_home.svg"></a></li>
-      <li class="navbar-item"><a class="navbar-link" href="index.html#profiles">Profiles</a></li>
-      <li class="navbar-item"><a class="navbar-ico" href="index.html#profiles"><img src="images/ico_user.svg"></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="{{ "#top" | relative_url }}">Home</a></li>
+      <li class="navbar-item"><a class="navbar-ico" href="{{ "#top" | relative_url }}"><img src="{{ "/images/ico_home.svg" | relative_url }}"></a></li>
+      <li class="navbar-item"><a class="navbar-link" href="{{ "#profiles" | relative_url }}">Profiles</a></li>
+      <li class="navbar-item"><a class="navbar-ico" href="{{ "#profiles" | relative_url }}"><img src="{{ "/images/ico_user.svg" | relative_url }}"></a></li>
       </ul>
   </div>
 </nav>
