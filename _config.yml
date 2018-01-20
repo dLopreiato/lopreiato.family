@@ -7,9 +7,8 @@ collections:
     output: true
     permalink: /:path/
 defaults:
-  -
-  scope:
-    path: ""
-    type: profiles
-  values:
-    layout: profile
+  - scope:
+      path: ""
+      type: profiles
+    values:
+      layout: profile
