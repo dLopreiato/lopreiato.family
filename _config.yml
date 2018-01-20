@@ -1,6 +1,7 @@
 ---
 title: Lopreiato.Family
-baseurl: dlopreiato.github.io/lopreiato.family/
+baseurl: /lopreiato.family
+url: https://dlopreiato.github.io
 timezone: America/New_York
 collections:
   profiles:
