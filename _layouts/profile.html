@@ -12,12 +12,18 @@
 </head>
 <body>
   {% include navbar.html %}
+
+  <div class="hero" id="top">
+    <div class="container">
+      <h1>{{ page.fullname }}</h1>
+    </div>
+  </div>
   
   <div class="section" id="profile">
     <div class="container">
       <div class="row">
         <div class="six columns">
-          <img class="u-max-full-width" src="images/{{ page.portrait }}">
+          <img class="u-max-full-width" src="{{ "/images/" | relative_url | append: page.portrait }}">
         </div>
         <div class="six columns">
           {{ content }}
@@ -25,6 +31,22 @@
       </div>
     </div>
   </div>
+
+  {% if links %}
+  <div class="section" id="connect">
+      <div class="container">
+        <div class="row">
+          <h4>Connect with me</h4>
+          <ul>
+            {% for link in links %}
+            <li><a href="{{ link.location }}"><img src="{{ "/images/" | relative_url | append: link.icon }}"></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <hr>
+      </div>
+    </div>
+  {% endif %}
 
   {% include footer.html %}
 </body>
