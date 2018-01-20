@@ -2,6 +2,9 @@
 title: Lopreiato.Family
 timezone: America/New_York
 collections:
+  members:
+    title: Members
+    output: true
   posts:
     title: Posts
     output: true
