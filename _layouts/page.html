@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+
+  {% include styles.html %}
+
+</head>
+<body>
+  {% include navbar.html %}
+  
+  {{ content }}
+
+  {% include footer.html %}
+</body>
+</html>
