@@ -45,11 +45,12 @@ layout: page
       </div>
       <div class="row">
         {% for profile in site.profiles %}
+        {% assign loopmod = forloop.index0 | modulo: 2 %}
         <div class="six columns headshot">
           <a href="{{ profile.relative_path }}"><img class="u-max-full-width" src="{{ "/images/" | relative_url | append: profile.portrait }}" /></a>
           <h4><a href="{{ profile.relative_path }}">{{ profile.shortname }}</a><br><small>{{ profile.blurb }}</small></h4>
         </div>
-        {% if forloop.last == false and forloop.index0 | modulo: 2 == 0 %}
+        {% if forloop.last == false and loopmod == 1 %}
       </div>
       <div class="row">
         {% endif %}
