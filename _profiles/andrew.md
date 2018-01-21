@@ -1,8 +1,8 @@
 ---
-title: Software Developer at Microsoft
 fullname: Andrew Lopreiato
 shortname: Andrew
 portrait: portrait_andrew.jpg
+blurb: Software Developer at Microsoft
 links:
 - location: https://www.linkedin.com/in/andrewlopreiato
   icon: ico_linkedin.svg
