@@ -1,2 +1,2 @@
-# lopreiato.family
-The lopreiato family website
+# Lopreiato.Family
+The lopreiato family website. Not accepting PRs. Not accepting contributors.
