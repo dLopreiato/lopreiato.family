@@ -49,7 +49,7 @@ layout: page
           <a href="{{ profile.relative_path }}"><img class="u-max-full-width" src="{{ "/images/" | relative_url | append: profile.portrait }}" /></a>
           <h4><a href="{{ profile.relative_path }}">{{ profile.shortname }}</a><br><small>{{ profile.blurb }}</small></h4>
         </div>
-        {% if forloop.index0 == 1 and forloop.last == false%}
+        {% if forloop.last == false and forloop.index0 | modulo: 2 == 1 %}
       </div>
       <div class="row">
         {% endif %}
