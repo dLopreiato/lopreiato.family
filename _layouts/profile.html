@@ -38,7 +38,7 @@
         <div class="row">
           <h4>Connect with me</h4>
           <ul>
-            {% for link in links %}
+            {% for link in page.links %}
             <li><a href="{{ link.location }}"><img src="{{ "/images/" | relative_url | append: link.icon }}"></a></li>
             {% endfor %}
           </ul>
