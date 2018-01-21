@@ -35,3 +35,26 @@ layout: page
     <hr>
   </div>
 </div>
+
+<div class="section" id="profiles">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <h3>Our Profiles</h3>
+        </div>
+      </div>
+      <div class="row">
+        {% for profile in site.profiles %}
+        <div class="six columns headshot">
+          <a href="{{ profile.relative_path }}"><img class="u-max-full-width" src="{{ "/images/" | relative_url | append: profile.portrait }}" /></a>
+          <h4><a href="{{ profile.relative_path }}">{{ profile.shortname }}</a><br><small>{{ profile.blurb }}</small></h4>
+        </div>
+        {% if forloop.index0 == 1 and forloop.last == false%}
+      </div>
+      <div class="row">
+        {% endif %}
+        {% endfor %}
+      </div>
+      <hr>
+    </div>
+  </div>
